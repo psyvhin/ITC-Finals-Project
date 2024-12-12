@@ -62,7 +62,7 @@ CSS Libraries and Tools
 # How to Run the Portfolio
 1. Clone the Repository:
 
-
+git clone https://github.com/psyvhin/ITC-Finals-Project.git
 
 2. Open the Website:
 

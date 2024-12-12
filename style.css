@@ -1,0 +1,273 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Header Section */
+.header {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('background.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.header .highlight {
+  color: #4CAF50;
+}
+
+.header .btn {
+  padding: 0.7rem 2rem;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header .btn:hover {
+  background-color: #45a049;
+}
+
+/* Section Styles */
+section {
+  padding: 4rem 2rem;
+}
+
+.about {
+  background: linear-gradient(to right, #1a1a1a, #333);
+}
+
+.skills {
+  background: #262626;
+}
+
+.sdg-feature {
+  background: linear-gradient(to bottom, #1a1a1a, #4CAF50);
+}
+
+.contact {
+  background: #333;
+}
+
+/* About Section */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #4CAF50;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Skills Section */
+.skills-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border: 1px solid #4CAF50;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+
+.skill-card h3 {
+  margin-bottom: 1rem;
+}
+
+/* SDG Feature Section */
+.sdg-feature h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.sdg-feature p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sdg-feature .sdg-projects {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.sdg-feature ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sdg-feature ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sdg-feature ul li i {
+  color: #4CAF50;
+  margin-right: 0.5rem;
+}
+
+/* Contact Section */
+.contact-info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  text-align: center;
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.contact-card i {
+  font-size: 2rem;
+  color: #4CAF50;
+  margin-bottom: 1rem;
+}
+
+.contact-card p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.contact-card p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000;
+  color: #fff;
+  font-size: 0.9rem;
+}
